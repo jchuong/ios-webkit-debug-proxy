@@ -38,6 +38,7 @@ On Linux:
           usbmuxd \
           libimobiledevice-dev
 On Mac, it's easiest to use homebrew for the dependencies:
+
       brew install \
         autoconf automake \
         libusb libplist \
@@ -48,7 +49,8 @@ On Mac, it's easiest to use homebrew for the dependencies:
       make
       sudo make install
 
-Personally, my dependencies at thie time of this writing is:
+Personally, my dependencies at thie time of this writing (Febuary 11, 2015) is:
+
     ideviceinstaller HEAD
     libplist 1.12
     libusb 1.0.19
