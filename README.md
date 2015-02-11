@@ -49,7 +49,7 @@ On Mac, it's easiest to use homebrew for the dependencies:
       make
       sudo make install
 
-Personally, my dependencies at thie time of this writing (Febuary 11, 2015) is:
+Personally, my dependencies at the time of this writing (Febuary 11, 2015) is:
 
     ideviceinstaller HEAD
     libplist 1.12
