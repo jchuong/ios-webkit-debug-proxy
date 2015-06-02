@@ -1305,7 +1305,8 @@ rpc_status iwdp_on_applicationSentListing(rpc_t rpc,
     return RPC_ERROR;  // Inspector closed?
   }
   if (!ht_get_value(iwi->app_id_to_true, app_id)) {
-    return self->on_error(self, "Unknown app_id %s", app_id);
+    // ignore update for a tab which is not in the hash map
+    return RPC_SUCCESS;
   }
   ht_t ipage_ht = iwi->page_num_to_ipage;
   iwdp_ipage_t *ipages = (iwdp_ipage_t *)ht_values(ipage_ht);
